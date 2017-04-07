@@ -114,6 +114,8 @@ public class Assignment5 {
                     current[0] = current[0].replaceAll("[^should've]", " ");
                 } else if (current[0].contains("would've")) {
                     current[0] = current[0].replaceAll("[^would've]", " ");
+                    } else if (current[0].contains("aren't")) {
+                    current[0] = current[0].replaceAll("[^aren't]", " ");
                 } else {
                     current[0] = current[0].replaceAll("[^a-zA-Z]", " ");
                 }
@@ -135,6 +137,7 @@ public class Assignment5 {
                             wordsFound++;
                             compsFound += count[0];
                         } else {
+                            //System.out.println(tokens[i]);
                             wordsNotFound++;
                             compsNotFound += count[0];
                         }
